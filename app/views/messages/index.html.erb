@@ -1,3 +1,29 @@
-<h1>Rails 5.1サンプルアプリケーション</h1>
-<p>ReactベースのMaterial-UI(カード)を使う</p>
-<p><%= @message%></p>
+
+
+<%= form_for(@message) do |f| %>
+
+<div class="field">
+  <%= f.label :user_id %>
+  <%= f.text_field :user_id %>
+</div>
+
+  <div class="field">
+    <%= f.label :text %>
+    <%= f.text_field :text %>
+  </div>
+
+  <div id="test"></div>
+
+  <div class="action">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<h3>メッセージ</h3>
+<div id="messages"></div>
+<!-- <% @messages.each do |m|%>
+  <tr>
+    <td><%= m.text %></td>
+  </tr>
+
+<% end %> -->

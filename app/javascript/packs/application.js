@@ -8,4 +8,7 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
-require('./expandable_example.jsx')
+
+
+
+require('./messageBox.jsx')
